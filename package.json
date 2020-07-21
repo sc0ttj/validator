@@ -1,0 +1,36 @@
+{
+	"name": "@scottjarvis/validator",
+	"version": "1.0.0",
+	"description": "a tiny JavaScript object schema validation tool",
+	"main": "dist/index.js",
+	"module": "dist/index.ems.js",
+	"es2015": "dist/index.ems.js",
+	"main:umd": "dist/index.umd.js",
+	"browser": "dist/index.js",
+	"unpkg": "dist/index.js",
+	"source": "src/index.js",
+	"scripts": {
+		"build": "microbundle --name validator --compress",
+		"test": "echo \"Error: no test specified\" && exit 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sc0ttj/validator.git"
+	},
+	"keywords": [
+		"json",
+		"js-object",
+		"schema",
+		"types",
+		"validator"
+	],
+	"author": "sc0ttj",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sc0ttj/validator/issues"
+	},
+	"homepage": "https://github.com/sc0ttj/validator#readme",
+	"devDependencies": {
+		"microbundle": "^0.12.3"
+	}
+}
