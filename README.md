@@ -60,3 +60,11 @@ if (errs.length < 1) {
   console.error("Invalid! Errors:", errs)
 }
 ```
+
+## Changelog
+
+**1.0.1**
+- fixed generation of errors, no duplicates
+
+**1.0.0**
+- initial release

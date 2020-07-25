@@ -1,5 +1,5 @@
 export default function validator(obj, schema) {
-  this.errs = this.errs || []
+  var errs = []
 
   Object.entries(schema).forEach(item => {
     var key = item[0]
@@ -10,27 +10,26 @@ export default function validator(obj, schema) {
 
     if (expectedType === "array") {
       if (!Array.isArray(val)) {
-        this.errs.push({ key: key, expected: "array", got: keyType })
+        errs.push({ key: key, expected: "array", got: keyType })
       }
     }
 
     // if we have object, call validator on it
     else if (keyType === "object" && !Array.isArray(val)) {
-      validator(obj[key], schema[key])
-      return false
+      errs = [...errs, ...validator(obj[key], schema[key])]
     }
 
     // if we have a function, it's a custom validator func, should return true/false
     else if (typeof expectedType === "function") {
       if (!schema[key](val)) {
-        this.errs.push({ key: key, expected: true, got: false })
+        errs.push({ key: key, expected: true, got: false })
       }
     }
 
     // if we have a string, it should be the name of the expected type in the schema
     else if (keyType !== expectedType.toLowerCase()) {
-      this.errs.push({ key: key, expected: schema[key], got: keyType })
+      errs.push({ key: key, expected: schema[key], got: keyType })
     }
   })
-  return this.errs
+  return errs
 }
