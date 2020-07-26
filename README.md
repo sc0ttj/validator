@@ -27,7 +27,7 @@ var schema = {
   id: "number",
   list: "array",
   name: "string",
-  age: age => (typeof age === "number") & (age > 17) && age < 130,
+  age: age => typeof age === "number" && age > 17 && age < 130,
   foo: {
     baz: "string"
   }
