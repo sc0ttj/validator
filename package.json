@@ -1,6 +1,6 @@
 {
 	"name": "@scottjarvis/validator",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "a tiny JavaScript object schema validation tool",
 	"main": "dist/index.js",
 	"module": "dist/index.ems.js",
