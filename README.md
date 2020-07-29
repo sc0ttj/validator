@@ -12,7 +12,7 @@ npm i @scottjarvis/validator
 
 ## Usage
 
-Add to your project:
+Add it to your project:
 
 ```js
 var validator = require("@scottjarvis/validator")
