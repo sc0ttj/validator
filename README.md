@@ -2,6 +2,8 @@
 
 A tiny schema validation thing for JavaScript Objects.
 
+[![npm version](https://badge.fury.io/js/%40scottjarvis%2Fvalidator.svg)](https://badge.fury.io/js/%40scottjarvis%2Fvalidator) [![Dependency Status](https://david-dm.org/sc0ttj/validator.svg)](https://david-dm.org/sc0ttj/validator) [![devDependencies Status](https://david-dm.org/sc0ttj/validator/dev-status.svg)](https://david-dm.org/sc0ttj/validator?type=dev) [![Node version](https://badgen.net/npm/node/@scottjarvis/validator)](http://nodejs.org/download/) [![Build Status](https://travis-ci.org/sc0ttj/validator.svg?branch=master)](https://travis-ci.org/sc0ttj/validator) [![bundle size](https://badgen.net/bundlephobia/minzip/@scottjarvis/validator?color=green&label=gzipped)](https://badgen.net/bundlephobia/minzip/@scottjarvis/validator) [![Downloads](https://badgen.net/npm/dt/@scottjarvis/validator)](https://badgen.net/npm/dt/@scottjarvis/validator)
+
 ## Install
 
 ```
